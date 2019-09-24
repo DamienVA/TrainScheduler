@@ -24,45 +24,42 @@
         </div>
         <div class="card">
             <div class="card-header">
-                Current Employees
+                Current Train Schedule
             </div>
             <div class="card-body">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Employee Name</th>
-                            <th scope="col">Role</th>
-                            <th scope="col">Start Date</th>
-                            <th scope="col">Months Worked</th>
-                            <th scope="col">Monthly Rate ($)</th>
-                            <th scope="col">Total Billed ($)</th>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <th scope="row">Trenton Epress</th>
+                            <td>Trenton</td>
+                            <td>25</td>
+                            <td><span id="arrival">05:35 PM</span></td>
+                            <td><span id="t-">10</span></td>
+                            
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                        <th scope="row">Oregon Trail</th>
+                        <td>Salem, Oregon</td>
+                        <td>3600</td>
+                        <td><span id="arrival">01:39 PM</span></td>
+                        <td><span id="t-">1154</span></td>
+                        
+                    </tr>
+                    <th scope="row">Midnight Carriage</th>
+                    <td>Philadelphia</td>
+                    <td>15</td>
+                    <td><span id="arrival">05:35 PM</span></td>
+                    <td><span id="t-">10</span></td>
+                    
+                </tr>
                     </tbody>
                 </table>
             </div>
@@ -71,25 +68,25 @@
 
         <div class="card">
             <div class="card-header">
-                Add Employee
+                Add Train
             </div>
             <div class="card-body">
                 <form>
                     <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="First Last">
+                        <label>Train Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Trenton Express">
                     </div>
                     <div class="form-group">
-                        <label>Role</label>
-                        <input type="text" class="form-control" id="roleInput" placeholder="Another input">
+                        <label>Destination</label>
+                        <input type="text" class="form-control" id="roleInput" placeholder="Trenton">
                     </div>
                     <div class="form-group">
-                        <label>Start Date</label>
-                        <input type="date" class="form-control" id="startDateInput" placeholder="Another input">
+                        <label>First Train Time (HH:mm - military time)</label>
+                        <input type="time" class="form-control" id="startDateInput" placeholder="05:35">
                     </div>
                     <div class="form-group">
-                        <label>Monthly Rate</label>
-                        <input type="text" class="form-control" id="monthlyRateInput" placeholder="Another input">
+                        <label>Frequency (min)</label>
+                        <input type="text" class="form-control" id="monthlyRateInput" placeholder="25">
                     </div>
                     <input class="btn btn-primary" id="addUser" type="submit" value="Submit">
                 </form>
